@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+<!-- 	<constant name="struts.multipart.maxSize" value="10701096" /> -->
+<!-- 	<constant name="struts.multipart.saveDir " value="D:/tmp" /> -->
+
+	<package name="helloworld" extends="struts-default">
+		<interceptors>
+			<interceptor name="myinterceptor" class="com.leclex.struts.MyInterceptor"></interceptor>
+		</interceptors>
+
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+		<action name="hello" class="com.leclex.struts.HelloWorldAction"
+			method="execute">
+			<!-- <interceptor-ref name="params"></interceptor-ref> -->
+			<!-- <interceptor-ref name="timer"></interceptor-ref> -->
+			<!-- <interceptor-ref name="myinterceptor"></interceptor-ref> -->
+			<result name="success">/HelloWorld.jsp</result>
+			<!-- <result name="success" type="freemarker"> -->
+			<!-- <param name="location">/hello.fm</param> -->
+			<!-- </result> -->
+<!-- 			<result name="error">/AccessDenied.jsp</result> -->
+<result name="error">/error.jsp</result>
+		</action>
+		<action name="upload" class="com.leclex.struts.UploadFile">
+			<interceptor-ref name="fileUpload">
+				<!-- <param name="maximumSize">5242880</param> -->
+				<param name="allowedTypes">image/jpeg,image/gif</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+</struts>

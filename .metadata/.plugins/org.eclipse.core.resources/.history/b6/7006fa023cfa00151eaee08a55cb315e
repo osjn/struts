@@ -1,0 +1,13 @@
+package com.leclex.struts;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class SystemDetails extends ActionSupport {
+
+	private Environment environment = new Environment("Development");
+	private String operatingSystem = "Windows XP SP3";
+	
+	public String execute() {
+		return SUCCESS;
+	}
+}

@@ -1,0 +1,10 @@
+package com.leclex.struts;
+
+public class HelloWorldAction {
+
+	private String name;
+	
+	public String execute() throws Exception {
+		return "success";
+	}
+}

@@ -1,0 +1,5 @@
+package com.leclex.struts;
+
+public class HelloWorldAction {
+
+}

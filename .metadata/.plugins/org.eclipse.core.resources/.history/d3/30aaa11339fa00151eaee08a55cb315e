@@ -1,0 +1,9 @@
+package com.leclex.struts;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class SystemDetails extends ActionSupport {
+
+	private Environment environment = new Environment("Development");
+	
+}
