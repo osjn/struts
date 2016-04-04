@@ -2,4 +2,5 @@
 <typeInfoHistroy>
 <typeInfo handle="=HelloWorldStruts/D:\/github\/struts\/HelloWorldStruts\/WebContent\/WEB-INF\/lib\/xwork-core-2.3.28.jar&lt;com.opensymphony.xwork2.interceptor(AbstractInterceptor.class[AbstractInterceptor" modifiers="1057" timestamp="1458305686000"/>
 <typeInfo handle="=HelloWorldStruts/D:\/github\/struts\/HelloWorldStruts\/WebContent\/WEB-INF\/lib\/xwork-core-2.3.28.jar&lt;com.opensymphony.xwork2(ActionSupport.class[ActionSupport" modifiers="33" timestamp="1458305686000"/>
+<typeInfo handle="=HelloWorldStruts/D:\/github\/struts\/HelloWorldStruts\/WebContent\/WEB-INF\/lib\/struts2-core-2.3.28.jar&lt;org.apache.struts2.util(StrutsTypeConverter.class[StrutsTypeConverter" modifiers="1057" timestamp="1458305766000"/>
 </typeInfoHistroy>
